@@ -1,20 +1,20 @@
 {
-  "id": "module",
-  "title": "New Module",
-  "description": "",
+  "id": "clean-combat-tracker",
+  "title": "Clean Combat Tracker",
+  "description": "A small lightweight module to automate the removal of defeated NPCs from the combat tracker",
   "version": "#{VERSION}#",
   "library": "false",
   "manifestPlusVersion": "1.2.0",
   "compatibility": {
     "minimum": 10,
-    "verified": 10,
+    "verified": 11,
     "maximum": 11
   },
   "authors": [
     {
-      "name": "The League of Extraordinary FVTT Developers",
-      "url": "https://github.com/League-of-Foundry-Developers",
-      "discord": "discordID#0001"
+      "name": "Blue54",
+      "email": "chrisscrace@gmail.com",
+      "discord": "Blue54#4564"
     }
   ],
   "relationships": {
@@ -23,12 +23,6 @@
   },
   "esmodules": [
     "scripts/module.js"
-  ],
-  "scripts": [
-    "scripts/lib/lib.js"
-  ],
-  "styles": [
-    "styles/module.css"
   ],
   "languages": [
     {
@@ -41,11 +35,5 @@
   "manifest": "#{MANIFEST}#",
   "download": "#{DOWNLOAD}#",
   "license": "LICENSE",
-  "readme": "README.md",
-  "media": [
-    {
-      "type": "icon",
-      "url": "https://avatars2.githubusercontent.com/u/71292812?s=400&u=ccdb4eeb7abf551ca8f314e5a9bfd0479a4d3d41&v=4"
-    }
-  ]
+  "readme": "README.md"
 }
