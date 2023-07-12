@@ -1,13 +1,10 @@
 const ID = "clean-combat-tracker"
 
-Hooks.on('updateActor', async function(actor, change) {
+Hooks.on('updateCombatant', async function (combatant, update) {
     if (game.user.role == 4) {
-        if(actor.type === "npc" && change.system.attributes.hp.value === 0) {
-            let combatant = game.combat.getCombatantByActor(actor._id);
-            if(combatant){
-                combatant.delete();
-                log(false, combatant);
-            }
+        let actor = game.actors.get(combatant.actorId);
+        if (actor.type == "npc" && update.defeated === true) {
+            combatant.delete();
         }
     }
 });
